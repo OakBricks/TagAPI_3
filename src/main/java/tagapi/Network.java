@@ -22,7 +22,7 @@
  *    SOFTWARE.
  */
 
-package tagapi_3;
+package tagapi;
 
 import java.io.File;
 import java.net.HttpURLConnection;

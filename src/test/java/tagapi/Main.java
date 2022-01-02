@@ -22,7 +22,7 @@
  *    SOFTWARE.
  */
 
-package test_tagapi_3;
+package tagapi;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,7 +34,7 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        tagapi_3.API_Interface API = new tagapi_3.API_Interface();
+        tagapi.API_Interface API = new tagapi.API_Interface();
         final String serverIP = "dev.tagcraftmc.com";
         List ip = new ArrayList(API.getServersIPList());
         if (!ip.contains(serverIP) || ip.isEmpty()) {

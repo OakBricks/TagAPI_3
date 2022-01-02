@@ -22,7 +22,7 @@
  *    SOFTWARE.
  */
 
-package tagapi_3;
+package tagapi;
 
 import com.minecraft.moonlake.nbt.NBTTagCompound;
 import com.minecraft.moonlake.nbt.NBTTagList;

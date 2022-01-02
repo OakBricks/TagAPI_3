@@ -58,3 +58,8 @@ release.properties
 pom.xml.releaseBackup
 pom.xml.tag
 build-impl.xml
+# Ignore Gradle project-specific cache directory
+.gradle
+
+# Ignore Gradle build output directory
+build
