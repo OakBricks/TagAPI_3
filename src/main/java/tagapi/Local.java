@@ -348,7 +348,7 @@ class Local {
             }
             String content = new Scanner(new File(path)).useDelimiter("\\Z").next();
             //System.out.println(content);
-            ScriptEngine engine = new ScriptEngineManager().getEngineByName("javascript");
+            ScriptEngine engine = new ScriptEngineManager().getEngineByName("Nashorn");
             try {
 
                 String script_js = "var getJsonLibrariesDownloadsClassifiersNativesX=function(r,s){var a=r,e=JSON.parse(a),n=\"\",t=0;for(i=0;i<500;i++)try{n=n+e.libraries[t].downloads.classifiers[s].url+\"\\n\",t+=1}catch(o){t+=1}return n},getJsonLibrariesDownloadsClassifiersNativesY=function(r,s){var a=r,e=JSON.parse(a),n=\"\",t=0;for(i=0;i<500;i++)try{n=n+e.libraries[t].downloads.classifiers[s].path+\"\\n\",t+=1}catch(o){t+=1}return n},getJsonLibrariesDownloadsClassifiersNativesZ=function(r){var s=r,a=JSON.parse(s),e=\"\",n=0;for(i=0;i<500;i++)try{a.libraries[n].natives?(e=e+a.libraries[n].name+\"\\n\",n+=1):n+=1}catch(t){n+=1}return e};";
@@ -599,7 +599,7 @@ class Local {
             JSONObject jsonObject = (JSONObject) jsonParser.parse(reader);
             JSONObject jsonArgs = (JSONObject) jsonObject.get("arguments");
             String args = jsonArgs.get("game").toString();
-            args = args.replaceAll("\\[","").replaceAll("\\]","").re‌​placeAll(",", "").replaceAll("\"\"", " ").replaceAll("\"", "");
+            args = args.replaceAll("\\[","").replaceAll("\\]","").replaceAll(",", "").replaceAll("\"\"", " ").replaceAll("\"", "");
             String[] argsF = args.split("\\{rules");
             return (String)(argsF[0]);
 
